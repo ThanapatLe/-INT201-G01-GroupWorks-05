@@ -8,7 +8,7 @@ let products = [
 ]
  
 //Default parameters 
-function buy(item, amount = 1) { //รับ parameter เป็น item เเละ amount = 1
+function buy(item, amount = 1) { //รับ parameter เป็น item เเละ amount โดยให้ amount เป็น Default parameter = 1
     let name = products[item].productName //ให้ name เก็บชื่อสินค้า ที่ index ตาม item
     let totalPrice = products[item].price * amount //ให้ totalPrice เก็บราคาสินค้า * จำนวนที่ซื้อ
     return `${name} ${amount} ea price ${totalPrice} baht`
